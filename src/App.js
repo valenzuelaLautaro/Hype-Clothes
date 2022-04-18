@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import './style.css'
+import NavBar from './components/NavBar'
+import ItemListContainer from './components/ItemListContainer'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
     <>
-      <h1>Tienda: Hype Clothes</h1>
-      <p>Lautaro Valenzuela</p>
+      <NavBar brand="Hype Clothes"/>
+      <ItemListContainer greeting="Lautaro Valenzuela" />  
     </>
   );
 }
