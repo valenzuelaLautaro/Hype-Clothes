@@ -1,0 +1,12 @@
+.card{
+    width: 200px;
+    text-align: center;
+    margin: 0 30px;
+}
+.card img{
+    width: 198px;
+    height: 198px;
+}
+.col{
+    margin: 0 auto;
+}

@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <NavBar brand="Hype Clothes"/>
-      <ItemListContainer greeting="Lautaro Valenzuela" />  
+      <ItemListContainer greeting="Lautaro Valenzuela"></ItemListContainer>
     </>
   );
 }
