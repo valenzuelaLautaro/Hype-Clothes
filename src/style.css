@@ -6,4 +6,6 @@
 html,
 body{
     font-family: 'Courier New', Courier, monospace;
-}
+    min-height: 100vh;
+    padding-bottom: 170px;
+}   

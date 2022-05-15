@@ -5,9 +5,11 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 const CartWidget = () => {
     return (
         <div className='cart-widget'>
-            <FontAwesomeIcon icon={faCartShopping} size='6px' color='white' />
+            <a className='btn'>
+                <FontAwesomeIcon icon={faCartShopping} size='6px' color='white' />
+            </a>
         </div>
     );
 }
 
-export default CartWidget;
+export default CartWidget

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import ItemDetail from './ItemDetail'
 
+
 const ItemDetailContainer = () => {
 
     const { itemId } = useParams()
@@ -27,9 +28,9 @@ const ItemDetailContainer = () => {
     }
 
   return (
-    <div>
-        <ItemDetail name={cloth.name} description={cloth.description} price={cloth.price} pictureUrl={cloth.pictureUrl}></ItemDetail>
-    </div>
+        <div>
+            <ItemDetail item={cloth}></ItemDetail>
+        </div>
   )
 }
 

@@ -7,7 +7,7 @@ import './styles/NavBar.css'
 const NavBar = (props) => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark text-white">
                 <div className="container-fluid">
                   <Link to="/" className='nav-link'>
                     <a className="navbar-brand" href="/">{ props.brand }</a>

@@ -6,27 +6,35 @@ import './styles/ItemListContainer.css'
 
 const ItemListContainer = ({ greeting }) => {
     const [clothes, setDogs] = useState([])
+    const [loading, setLoading] = useState({})
 
     useEffect(() => {
         const getClothes = new Promise( (resolve, reject) => {
             setTimeout(() => {
                 resolve(clothesData)
+                setLoading(true)
             }, 2000)
         })
 
         getClothes.then( (result) => {
             console.log('Se completó la promesa.', result)
             setDogs(result)
+            setLoading(false)
         }).
         catch((error) => {
-            console.error(error)
+            console.error(error)    
         })
 
     }, [])
     console.log(greeting)
     return (
         <div className="item-list-container">
-           <ItemList clothesData={clothes} />
+            {
+                loading ? 
+                    <div className="spinner-border" role="status">
+                        <span className="visually-hidden">Loading...</span>
+                    </div> : <ItemList clothesData={clothes} />
+            }
         </div>
     );
 }

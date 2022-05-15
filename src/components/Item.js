@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 
 import './styles/Item.css'
 
-const Item = ({id ,name, description, price, pictureUrl}) => {
+const Item = ({id ,name, description, price, pictureUrl, stock}) => {
   return (
     <>
-        <div className="card text-center">
+        <div className="card text-center w-50">
             <img src={pictureUrl} className="card-img-top" alt="Item img" />
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>
